@@ -1,3 +1,4 @@
+<p align="center"><a href="https://t.me/emikosupport"><img src="https://telegra.ph/file/33bba9478a6d953a0294f.jpg" width="340"></a></p>
 <h2 align="center">Telegram Streamer Bot </h2>
 <p>
 Telegram bot for stream music on telegram, 
