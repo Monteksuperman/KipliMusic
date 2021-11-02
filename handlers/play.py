@@ -83,9 +83,9 @@ async def playlist_(client: Client, message: types.Message):
         if current and not queued:
             return await reply(
                 f"now playing\n"
-                f"📌 title: [{current['title']}](https://t.me/{bot_username}?start=ytinfo_{current['yt_id']})\n"
-                f"⏱ duration: {current['duration']}\n"
-                f"🙌 requested by: {mention_current_user}"
+                f"📌  ᴛɪᴛʟᴇ: [{current['title']}](https://t.me/{bot_username}?start=ytinfo_{current['yt_id']})\n"
+                f"⏱ ᴅᴜʀᴀᴛɪᴏɴ: {current['duration']}\n"
+                f"🙌  ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {mention_current_user}"
             )
         if current and queued:
             ques = "\n"
@@ -95,14 +95,14 @@ async def playlist_(client: Client, message: types.Message):
                 req_by = i["user_id"]
                 yt_id = i["yt_id"]
                 mention_user = (await message.chat.get_member(req_by)).user.mention
-                ques += f"📌 title: [{title}](https://t.me/{bot_username}?start=ytinfo_{yt_id})\n"
-                ques += f"⏱ duration: {duration}\n"
-                ques += f"🙌 requested by: {mention_user}\n\n"
+                ques += f"📌 ᴛɪᴛʟᴇ: [{title}](https://t.me/{bot_username}?start=ytinfo_{yt_id})\n"
+                ques += f"⏱ ᴅᴜʀᴀᴛɪᴏɴ: {duration}\n"
+                ques += f"🙌  ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {mention_user}\n\n"
             return await reply(
                 f"now playing\n"
-                f"📌 title: [{current['title']}](https://t.me/{bot_username}?start=ytinfo_{current['yt_id']})\n"
-                f"⏱ duration: {current['duration']}\n"
-                f"🙌 requested by: {mention_current_user}\n\n\n"
+                f"📌 ᴛɪᴛʟᴇ: [{current['title']}](https://t.me/{bot_username}?start=ytinfo_{current['yt_id']})\n"
+                f"⏱ ᴅᴜʀᴀᴛɪᴏɴ: {current['duration']}\n"
+                f"🙌  ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {mention_current_user}\n\n\n"
                 f"💬 in queue\n{ques}",
                 disable_web_page_preview=True
             )
