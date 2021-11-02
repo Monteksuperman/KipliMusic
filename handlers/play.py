@@ -90,10 +90,10 @@ async def playlist_(client: Client, message: types.Message):
         if current and queued:
             ques = "\n"
             for i in queued:
-                title = i["title"]
-                duration = i["duration"]
-                req_by = i["user_id"]
-                yt_id = i["yt_id"]
+                ᴛɪᴛʟᴇ = i["title"]
+                ᴅᴜʀᴀᴛɪᴏɴ = i["duration"]
+                ʀᴇǫ_ʙʏ = i["user_id"]
+                ʏᴛ_ɪᴅ = i["yt_id"]
                 mention_user = (await message.chat.get_member(req_by)).user.mention
                 ques += f"📌 ᴛɪᴛʟᴇ: [{title}](https://t.me/{bot_username}?start=ytinfo_{yt_id})\n"
                 ques += f"⏱ ᴅᴜʀᴀᴛɪᴏɴ: {duration}\n"
