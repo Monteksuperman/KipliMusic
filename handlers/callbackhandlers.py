@@ -31,7 +31,7 @@ def res_music(k: int, music: list, bot_username: str):
         results += f"{k}. [{i['title'][:35]}...]({i['url']})\n"
         results += f"┣ {emoji.LIGHT_BULB} duration - {i['duration']}\n"
         results += f"┣ {emoji.FIRE} [More Information](https://t.me/{bot_username}?start=ytinfo_{i['id']})\n"
-        results += "┗ powered by solid project\n\n"
+        results += "┗ powered by ʀᴀꜰʟʏᴍᴜsɪᴄ\n\n"
     return results
 
 
