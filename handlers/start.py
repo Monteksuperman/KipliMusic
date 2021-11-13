@@ -45,7 +45,7 @@ async def start_(_, message: types.Message):
                         [
                             button_keyboard(
                                 f"{emoji.FIRE} maintainer",
-                                url="https://t.me/talktome_bbot"
+                                url="https://t.me/raflyskuy"
                             )
                         ]
                     ]
