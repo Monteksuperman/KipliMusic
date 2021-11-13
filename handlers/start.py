@@ -39,7 +39,7 @@ async def start_(_, message: types.Message):
                         [
                             button_keyboard(
                                 f"{emoji.LOUDSPEAKER} channel",
-                                url="https://t.me/solidprojects"
+                                url="https://t.me/☞katakipli"
                             )
                         ],
                         [
