@@ -41,7 +41,7 @@ async def play_(client: Client, message: types.Message):
         results += f"{k}. [{i['title'][:35]}...]({i['url']})\n"
         results += f"┣ {emoji.LIGHT_BULB} duration - {i['duration']}\n"
         results += f"┣ {emoji.FIRE} [More Information](https://t.me/{bot_username}?start=ytinfo_{i['id']})\n"
-        results += "┗ powered by Zaen project\n\n"
+        results += "┗ powered by ʀᴀꜰʟʏᴍᴜsɪᴄ\n\n"
 
     temps = []
     keyboards = []
